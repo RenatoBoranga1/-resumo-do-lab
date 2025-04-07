@@ -1,0 +1,83 @@
+# 🏗️ Arquitetura e Serviços do Azure - AZ-900
+
+Este documento apresenta os principais componentes da **arquitetura do Microsoft Azure**, incluindo regiões, zonas de disponibilidade, grupos de recursos, assinaturas e estrutura organizacional. Tudo com foco nos conceitos exigidos na certificação **AZ-900**.
+
+---
+
+## 🌍 Regiões e Datacenters
+
+- O Azure possui mais de **60 regiões** em mais de **140 países** 🌐.
+- Cada **região** é composta por um ou mais **datacenters** fisicamente próximos.
+- Regiões oferecem:
+  - Escalabilidade
+  - Redução de latência
+  - Conformidade com residência de dados
+
+> 💡 **Datacenters** são equipados com energia, rede e resfriamento independentes, conectados por fibras ópticas privadas.
+
+---
+
+## 🗺️ Pares de Regiões e Regiões Soberanas
+
+### 🔄 Pares de Regiões
+- Azure vincula regiões em pares dentro da mesma área geográfica.
+- Protege dados com **replicação geográfica** e **failover** planejado.
+
+### 🏛️ Regiões Soberanas (Azure Governamental)
+- Projetadas para agências governamentais dos EUA e parceiros.
+- Ambiente físico e logicamente **isolado**.
+- Acesso restrito a **usuários autorizados**.
+
+---
+
+## 🧱 Zonas de Disponibilidade
+
+- Zonas de disponibilidade são **locais físicos separados** dentro de uma mesma região.
+- Cada zona tem infraestrutura independente de energia, resfriamento e rede.
+- Protegem contra falhas em **datacenters individuais**.
+
+---
+
+## 📦 Recursos e Grupos de Recursos
+
+- **Recursos**: Unidades gerenciáveis do Azure (ex.: VMs, bancos de dados, redes, etc.).
+- **Grupo de Recursos**: Contêiner lógico para agrupar e gerenciar múltiplos recursos relacionados como uma única entidade.
+
+> Exemplo: Uma aplicação pode ter recursos de rede, banco de dados e VMs organizados em um mesmo grupo.
+
+---
+
+## 🧾 Assinaturas do Azure
+
+- Uma **assinatura** define:
+  - Limites de **cobrança**
+  - Limites de **controle de acesso**
+- Cada assinatura fornece acesso autenticado à conta do Azure.
+- Você pode:
+  - Gerar relatórios de cobrança separados.
+  - Aplicar políticas de segurança por assinatura.
+
+---
+
+## 🗂️ Grupos de Gerenciamento
+
+- Contêiner para **organizar várias assinaturas**.
+- Permite aplicar **políticas de governança e segurança** em todas as assinaturas filhas.
+- As políticas são herdadas pelas assinaturas que pertencem ao grupo.
+
+---
+
+## 🏛️ Hierarquia Organizacional
+
+```text
+Conta do Azure
+├── Grupo de Gerenciamento
+│   ├── Assinatura
+│   │   ├── Grupo de Recursos
+│   │   │   └── Recursos
+🎓 Contas Especiais
+Conta Gratuita do Azure: 12 meses gratuitos + R$ 1.000 em créditos nos primeiros 30 dias.
+
+Conta de Estudante Gratuita: Sem necessidade de cartão de crédito; inclui serviços gratuitos por 12 meses.
+
+Área restrita do Microsoft Learn: Acesso a recursos educacionais e laboratórios práticos com ambiente de nuvem simulado.
