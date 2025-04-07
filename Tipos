@@ -1,0 +1,48 @@
+🔹 Tipos de Computação no Azure
+Tipo	Descrição	Modelo
+Máquinas Virtuais (VMs)	Emulação de computadores físicos com controle total sobre o sistema operacional.	IaaS
+Instâncias de Contêiner	Executam contêineres isoladamente, sem precisar gerenciar VMs.	PaaS
+Funções (Azure Functions)	Execução de código sob demanda, sem servidor ativo o tempo todo.	FaaS / Serverless
+Serviços de Aplicativos	Plataforma gerenciada para criar e hospedar apps web e APIs.	PaaS
+🔹 Recursos Exigidos para Máquinas Virtuais
+Processador virtual
+
+Memória RAM
+
+Armazenamento em disco
+
+Sistema operacional
+
+Rede virtual (VNet)
+
+🔹 Opções de VMs no Azure
+Opção	Função
+VMs Individuais	Controle total sobre cada máquina virtual.
+Conjuntos de Disponibilidade	Alta disponibilidade entre múltiplas VMs em domínios de falha diferentes.
+Conjuntos de Dimensionamento	Escalonamento automático (horizontal).
+Área de Trabalho Virtual	Ambiente de desktop virtualizado com múltiplas sessões.
+🔹 Contêineres e Orquestração
+Serviço	Função
+Instâncias de Contêiner	Executa rapidamente um único contêiner.
+Aplicativos de Contêiner	Gerencia, escala e equilibra cargas automaticamente.
+Azure Kubernetes Service	Orquestração para aplicações com múltiplos contêineres.
+🔹 Hospedagem de Aplicativos
+App Services (PaaS):
+
+Suporte a várias linguagens (.NET, Java, Python etc.)
+
+Requisitos empresariais de desempenho e segurança
+
+Escalável, gerenciado pelo Azure
+
+🔹 Rede Virtual no Azure (VNet)
+Componente	Descrição
+Sub-redes	Segmentação lógica da rede para melhor organização e controle.
+Emparelhamento de Redes	Conecta duas VNets privadas diretamente.
+Gateway de VPN	Envia tráfego criptografado pela Internet para redes no local.
+ExpressRoute	Conexão privada dedicada entre local e Azure, fora da internet pública.
+DNS do Azure	Gerencia nomes de domínio privados e públicos.
+🔹 Pontos de Extremidade
+Tipo	Descrição
+Ponto de Extremidade Público	Acessível globalmente pela Internet.
+Ponto de Extremidade Privado	Acesso restrito à sua rede privada (VNet).
